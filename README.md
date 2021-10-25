@@ -16,7 +16,12 @@ Worry less and accomplish more with this all-in-one password management app. It 
 
 ### Installing
 
-* How/where to download your program
+* Clone with git
+```
+$ git clone https://github.com/Periyot/Password-Protection.git
+```
+
+* Modify the data path in DataManager.cs
 ```csharp
 private string cs = @"URI=file:PATH"; // Path = Data path
 ```
