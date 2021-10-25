@@ -28,9 +28,9 @@ private string cs = @"URI=file:PATH"; // Path = Data path
 
 ## Contributing
 
-Projeye katkıda bulunmak söz konusu olduğunda, yardımcı olmak için yapabileceğiniz iki temel şey, sorunları bildirmek ve çekme istekleri göndermektir.
+When it comes to contributing to the project, the two main things you can do to help are report issues and submit pull requests.
 
-Halihazırda belirli standartlarımız olsa da, hiçbir şeyin kesin olarak belirlenmediğini unutmayın. Kodun yapılandırılma şekliyle, kullandığımız kitaplıklarla veya katkıda bulunmayla ilgili süreçlerle ilgili bir sorununuz varsa, lütfen bunu gündeme getirin.
+Note that while we already have certain standards, nothing is definitive. If you have an issue with the way the code is structured, the libraries we use, or the contributing processes, please raise it.
 
 ## License
 
