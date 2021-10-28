@@ -1162,11 +1162,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/l/Documents/C#/Password_Protection/Password_Protection/Password_Protection.csproj",
+      "projectUniqueName": "/Users/l/Documents/GitHub/Password-Protection/Password_Protection.csproj",
       "projectName": "Password_Protection",
-      "projectPath": "/Users/l/Documents/C#/Password_Protection/Password_Protection/Password_Protection.csproj",
+      "projectPath": "/Users/l/Documents/GitHub/Password-Protection/Password_Protection.csproj",
       "packagesPath": "/Users/l/.nuget/packages/",
-      "outputPath": "/Users/l/Documents/C#/Password_Protection/Password_Protection/obj/",
+      "outputPath": "/Users/l/Documents/GitHub/Password-Protection/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/l/.nuget/NuGet/NuGet.Config"
@@ -1213,7 +1213,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
       }
     }
   }

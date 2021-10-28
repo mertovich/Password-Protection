@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VgXiDjJ0Ll3qwrjwNTnyaUCDum2SFcI8kKQEdCdyW5JkA7/s/0oPuLjxvUzhKu/d+H5kZ0x/LQXflgPPI60ivQ==",
+  "dgSpecHash": "Sq6NFn8Mt4xbPP08n9EvxZiY+O4yz8VWfoI3euN9mVxhERBHIVqJb80P8OJGRFf+ikTCeNclvbJroxnahYiCUg==",
   "success": true,
-  "projectFilePath": "/Users/l/Documents/C#/Password_Protection/Password_Protection/Password_Protection.csproj",
+  "projectFilePath": "/Users/l/Documents/GitHub/Password-Protection/Password_Protection.csproj",
   "expectedPackageFiles": [
     "/Users/l/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",
     "/Users/l/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

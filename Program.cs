@@ -33,18 +33,18 @@ namespace Password_Protection
                         Console.WriteLine($"Enter your password name : ");
                         data.name = Convert.ToString(Console.ReadLine());
                         Console.WriteLine($"Enter the password you want to save (must be at least 6 characters): ");
-                        String control = Convert.ToString(Console.ReadLine());
-                        if (control.Length >= 6)
+                        String password = Convert.ToString(Console.ReadLine());
+                        if (password.Length >= 6)
                         {
-                            data.password = control;
+                            data.password = password;
                             dataManager.addData(data);
                         }
                         else
                         {
-                            Console.WriteLine($"The password you entered must be longer than 6 characters.");
+                            Console.WriteLine($"The password you entered must be longer than 6 characters.\n");
                             Console.WriteLine($"Enter the password you want to save (must be at least 6 characters): ");
-                            control = Convert.ToString(Console.ReadLine());
-                            data.password = control;
+                            password = Convert.ToString(Console.ReadLine());
+                            data.password = password;
                             dataManager.addData(data);
                         }
                         break;

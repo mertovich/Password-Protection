@@ -5,9 +5,10 @@ namespace Password_Protection
 {
     public class DataManager
     {
-        private string cs = @"URI=file:PATH"; // Path = Data path
+        private string cs = @"URI=file:Path"; // Path = Data path
         public void addData(Data data)
         {
+            Encryption encryption = new Encryption();
             using var con = new SQLiteConnection(cs);
             con.Open();
 
@@ -19,7 +20,7 @@ namespace Password_Protection
 
             cmd.CommandText = $"INSERT INTO passwords(name, password) VALUES(@name,@password)";
             cmd.Parameters.AddWithValue("@name", data.name);
-            cmd.Parameters.AddWithValue("@password", data.password);
+            cmd.Parameters.AddWithValue("@password", encryption.encryptData(data.password));
             cmd.Prepare();
             cmd.ExecuteNonQuery();
             
@@ -29,6 +30,7 @@ namespace Password_Protection
 
         public void readData()
         {
+            Encryption encryption = new Encryption();
             using var con = new SQLiteConnection(cs);
             con.Open();
 
@@ -40,7 +42,7 @@ namespace Password_Protection
             Console.WriteLine($"{rdr.GetName(0),-3} {rdr.GetName(1),-8} {rdr.GetName(2),8}");
             while (rdr.Read())
             {
-                Console.WriteLine($"{rdr.GetInt32(0),-3} {rdr.GetString(1),-8} {rdr.GetString(2),8}");
+                Console.WriteLine($"{rdr.GetInt32(0),-3} {rdr.GetString(1),-8} {encryption.decodeData(rdr.GetString(2)),8}");
             }
             con.Close();
         }
