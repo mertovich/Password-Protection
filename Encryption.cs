@@ -9,92 +9,92 @@ namespace Password_Protection
         public string encryptData(string data)
         {
             string encryptString = null;
-            List<string> newEbcryptList = new List<string>();
+            List<string> newEncryptList = new List<string>();
             char[] charEncrypList = data.ToLower().ToCharArray();
             foreach (var chr in charEncrypList)
             {
                 switch (chr)
                 {
                     case 'a':
-                        newEbcryptList.Add("352");
+                        newEncryptList.Add("352");
                         break;
                     case 'b':
-                        newEbcryptList.Add("798");
+                        newEncryptList.Add("798");
                         break;
                     case 'c':
-                        newEbcryptList.Add("138");
+                        newEncryptList.Add("138");
                         break;
                     case 'd':
-                        newEbcryptList.Add("774");
+                        newEncryptList.Add("774");
                         break;
                     case 'e':
-                        newEbcryptList.Add("326");
+                        newEncryptList.Add("326");
                         break;
                     case 'f':
-                        newEbcryptList.Add("621");
+                        newEncryptList.Add("621");
                         break;
                     case 'g':
-                        newEbcryptList.Add("136");
+                        newEncryptList.Add("136");
                         break;
                     case 'h':
-                        newEbcryptList.Add("721");
+                        newEncryptList.Add("721");
                         break;
                     case 'i':
-                        newEbcryptList.Add("879");
+                        newEncryptList.Add("879");
                         break;
                     case 'ı':
-                        newEbcryptList.Add("879");
+                        newEncryptList.Add("879");
                         break;
                     case 'j':
-                        newEbcryptList.Add("731");
+                        newEncryptList.Add("731");
                         break;
                     case 'k':
-                        newEbcryptList.Add("838");
+                        newEncryptList.Add("838");
                         break;
                     case 'l':
-                        newEbcryptList.Add("537");
+                        newEncryptList.Add("537");
                         break;
                     case 'm':
-                        newEbcryptList.Add("264");
+                        newEncryptList.Add("264");
                         break;
                     case 'n':
-                        newEbcryptList.Add("213");
+                        newEncryptList.Add("213");
                         break;
                     case 'o':
-                        newEbcryptList.Add("907");
+                        newEncryptList.Add("907");
                         break;
                     case 'p':
-                        newEbcryptList.Add("809");
+                        newEncryptList.Add("809");
                         break;
                     case 'q':
-                        newEbcryptList.Add("647");
+                        newEncryptList.Add("647");
                         break;
                     case 'r':
-                        newEbcryptList.Add("397");
+                        newEncryptList.Add("397");
                         break;
                     case 's':
-                        newEbcryptList.Add("823");
+                        newEncryptList.Add("823");
                         break;
                     case 't':
-                        newEbcryptList.Add("134");
+                        newEncryptList.Add("134");
                         break;
                     case 'u':
-                        newEbcryptList.Add("674");
+                        newEncryptList.Add("674");
                         break;
                     case 'v':
-                        newEbcryptList.Add("426");
+                        newEncryptList.Add("426");
                         break;
                     case 'w':
-                        newEbcryptList.Add("988");
+                        newEncryptList.Add("988");
                         break;
                     case 'x':
-                        newEbcryptList.Add("614");
+                        newEncryptList.Add("614");
                         break;
                     case 'y':
-                        newEbcryptList.Add("178");
+                        newEncryptList.Add("178");
                         break;
                     case 'z':
-                        newEbcryptList.Add("154");
+                        newEncryptList.Add("154");
                         break;
                     default:
                         Console.WriteLine($"Error:encrypt ");
@@ -102,7 +102,7 @@ namespace Password_Protection
                 }
             }
             
-            foreach (string str in newEbcryptList)
+            foreach (string str in newEncryptList)
             {
                 if (encryptString == null)
                 {
